@@ -36,7 +36,7 @@ Local Policies
 
 #### Usage
 
-    python SecPol_Audit --input-file="secpol.inf" --output-file="secpol.csv"
+    python SecPol_Audit --input-file="secpol.inf" --output-file="secpol.csv" --brute-dictionary="tests/common_names.txt"
 
 * For checking username against common name list, add names to
   [Common Names text file](https://github.com/akpysec/SecPol_Audit/blob/master/engine/common_names.txt).
