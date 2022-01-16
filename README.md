@@ -41,7 +41,7 @@ Local Policies
 
 #### License
 Firewall RuleBase Audit is released under the
-[GNU Public License](https://github.com/akpysec/SecPol_Audit/LICENSE)
+[GNU Public License](https://github.com/akpysec/SecPol_Audit/blob/master/LICENSE)
 
 
 #### Contact
