@@ -16,10 +16,10 @@ SECTIONS = [
 REG_VALUE_TYPES = ["REG_SZ", "REG_DWORD"]
 
 check_status = [
-    "PASSED -",
-    "FAILED -",
-    "HALF -",
-    "MANUAL -"
+    "PASSED",
+    "FAILED",
+    "HALF",
+    "MANUAL"
 ]
 
 input_path = "C:\\Users\\andreyk\\PycharmProjects\\SecPol_Audit\\tests\\CIS.inf"
@@ -203,14 +203,7 @@ def system_access_check(sec_pol_object: ConfigParser, dictionary_supplied: str):
                 if v == "Accounts: Rename administrator account" or v == "Accounts: Rename guest account":
                     for common in common_names:
                         if common in stat:
-                            # print(
-                            #     stylize("FAILED -", BOLD_RED),
-                            #     stylize(v, BOLD_ORANGE),
-                            #     stylize(stat, BOLD_BLUE),
-                            #     stylize(f"- Contains common name:", BOLD_YELLOW),
-                            #     stylize(common, BOLD_RED)
-                            # )
-                            all_checks.append([check_status[1], v, stat, f"- Contains common name: {common}"])
+                            all_checks.append([check_status[1], v, stat, f" Contains common name: {common}"])
                         elif common not in stat:
                             pass
                         else:

@@ -2,6 +2,7 @@ from engine.cli_args import args
 import engine.secpol_reader as checks
 import colored
 from colored import stylize
+import pandas as pd
 
 """ Coloring Scheme """
 BOLD_RED = colored.fg("red") + colored.attr("bold")
@@ -29,6 +30,11 @@ three = checks.easy_check(
 )
 
 total = one + two + three
+
+if args.out_path:
+    dataframe = pd.DataFrame(total)
+    dataframe.columns = ["Status", "Name", "Configuration", "Comment"]
+    dataframe.to_csv(args.out_path + '.csv', index=False)
 
 for t in sorted(total):
     if len(t) == 3:
