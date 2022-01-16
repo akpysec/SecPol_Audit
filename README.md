@@ -21,9 +21,7 @@ Local Policies
 
 - Download & Install [Python](https://www.python.org/downloads/) (tested with python ~> 3.8).
 - Make sure you have [Git](https://git-scm.com/downloads) installed.
-  [requirements.txt](https://github.com/akpysec/SecPol_Audit/blob/master/requirements.txt) file.
-- The required libraries can be found in the
-
+- The required libraries can be found in the [requirements.txt](https://github.com/akpysec/SecPol_Audit/blob/master/requirements.txt) file.
 
 
 #### Installation
