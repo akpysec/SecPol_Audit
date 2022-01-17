@@ -15,7 +15,15 @@ parser.add_argument('-O', '--output-path',
                     required=False,
                     default=None,
                     dest='out_path',
-                    help='Provide output path for Parsed_Secpol.xlsx file',
+                    help='Provide output path for Parsed_SecPol.xlsx file',
+                    type=str
+                    )
+
+parser.add_argument('-F', '--output-filename',
+                    required=False,
+                    default=None,
+                    dest='out_file',
+                    help='Provide output file name with .xlsx extension',
                     type=str
                     )
 
