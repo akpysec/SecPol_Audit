@@ -22,9 +22,6 @@ check_status = [
     "MANUAL"
 ]
 
-input_path = "C:\\Users\\andreyk\\PycharmProjects\\SecPol_Audit\\tests\\CIS.inf"
-brute_dict = "C:\\Users\\andreyk\\PycharmProjects\\SecPol_Audit\\engine\\common_names.txt"
-
 
 def sec_pol_reader(sec_pol_file: str):
     """ Reading sec_pol.inf file function """

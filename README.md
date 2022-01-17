@@ -20,9 +20,11 @@ Local Policies
 #### Prerequisites
 
 - Download & Install [Python](https://www.python.org/downloads/) (tested with python ~> 3.8).
-- Make sure you have [Git](https://git-scm.com/downloads) installed.
+- Use [Git](https://git-scm.com/downloads) or download this tool otherwise.
 - The required libraries can be found in the [requirements.txt](https://github.com/akpysec/SecPol_Audit/blob/master/requirements.txt) file.
+- Install [pip]("https://pip.pypa.io/en/stable/installation/").
 
+python
 
 #### Installation
 
@@ -34,13 +36,13 @@ Local Policies
 
 #### Usage
 
-    python SecPol_Audit --input-file="secpol.inf" --output-file="secpol.csv" --brute-dictionary="tests/common_names.txt"
+    python SecPol_Audit --input-file="secpol.inf" --output-file="secpol.csv" --common-names="tests/common_names.txt"
 
 * For checking username against common name list, add names to
-  [Common Names text file](https://github.com/akpysec/SecPol_Audit/blob/master/engine/common_names.txt).
+  [Common Names](https://github.com/akpysec/SecPol_Audit/blob/master/engine/common_names.txt) text file or specify your own file with similar format convention.
 
 #### License
-Firewall RuleBase Audit is released under the
+Secpol Audit is released under the
 [GNU Public License](https://github.com/akpysec/SecPol_Audit/blob/master/LICENSE)
 
 
