@@ -1,7 +1,10 @@
 SecPol.inf file Auditing tool
 ---
+#
 
 #### This script performs auditing based on CIS Benchmark against Secpol.inf file configuration.
+
+#
 
 #### Secpol.inf file contains:
 Account Policies
@@ -13,9 +16,13 @@ Local Policies
 - User Rights Assignment (In Development)
 - Audit Policy (Recommended configuring advanced audit policy instead)
 
+#
+
 #### To export Secpol.inf:
 
     secedit /export /CFG PATH:/secpol.inf
+
+#
 
 #### Prerequisites
 
@@ -24,7 +31,7 @@ Local Policies
 - The required libraries can be found in the [requirements.txt](https://github.com/akpysec/SecPol_Audit/blob/master/requirements.txt) file.
 - Install [pip]("https://pip.pypa.io/en/stable/installation/").
 
-python
+#
 
 #### Installation
 
@@ -34,12 +41,16 @@ python
     pip install -r SecPol_Audit/requirements.txt
     python SecPol_Audit --help
 
+#
+
 #### Usage
 
     python SecPol_Audit --input-file="secpol.inf" --output-file="secpol.csv" --common-names="tests/common_names.txt"
 
 * For checking username against common name list, add names to
   [Common Names](https://github.com/akpysec/SecPol_Audit/blob/master/engine/common_names.txt) text file or specify your own file with similar format convention.
+
+#
 
 #### License
 Secpol Audit is released under the
