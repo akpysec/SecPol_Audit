@@ -228,7 +228,15 @@ def registry_values_check(sec_pol_object: ConfigParser):
                         v[0] == "Interactive logon: Message text for users attempting to log on" or \
                         v[0] == "Interactive logon: Message title for users attempting to log on" or \
                         v[0] == "Network access: Restrict clients allowed to make remote calls to SAM" or \
-                        v[0] == "System settings: Optional subsystems":
+                        v[0] == "System settings: Optional subsystems" or \
+                        v[0] == "Network security: LDAP client signing requirements" or \
+                        v[0] == "Network security: Minimum session security for NTLM SSP based (including secure RPC) servers" or \
+                        v[0] == "Network security: Minimum session security for NTLM SSP based (including secure RPC) clients" or \
+                        v[0] == "Network security: LAN Manager authentication level" or \
+                        v[0] == "Network access: Sharing and security model for local accounts" or \
+                        v[0] == "User Account Control: Behavior of the elevation prompt for standard users" or \
+                        v[0] == "User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode" or \
+                        v[0] == "Interactive logon: Smart card removal behavior":
 
                     all_checks.append([check_status[3], v[0], stat[1]])
 
