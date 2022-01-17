@@ -24,7 +24,7 @@ Local Policies
 
 #
 
-#### Prerequisites
+#### Prerequisites:
 
 - Download & Install [Python](https://www.python.org/downloads/) (tested with python ~> 3.8).
 - Use [Git](https://git-scm.com/downloads) or download this tool otherwise.
@@ -33,7 +33,7 @@ Local Policies
 
 #
 
-#### Installation
+#### Installation:
 
     git clone https://github.com/akpysec/SecPol_Audit
     python -m venv SecPol_Audit/venv
@@ -43,7 +43,7 @@ Local Policies
 
 #
 
-#### Usage
+#### Usage:
 
     python SecPol_Audit --input-file="secpol.inf" --output-file="secpol.csv" --common-names="tests/common_names.txt"
 
@@ -52,11 +52,11 @@ Local Policies
 
 #
 
-#### License
+#### License:
 Secpol Audit is released under the
 [GNU Public License](https://github.com/akpysec/SecPol_Audit/blob/master/LICENSE)
 
 #
 
-#### Contact
+#### Contact:
 Contact me via <akpysec@gmail.com>.
