@@ -34,7 +34,7 @@ total = one + two + three
 if args.out_path:
     dataframe = pd.DataFrame(total)
     dataframe.columns = ["Status", "Name", "Configuration", "Comment"]
-    dataframe.to_csv(args.out_path + '.csv', index=False)
+    dataframe.to_csv(args.out_path, index=False)
 
 for t in sorted(total):
     if len(t) == 3:

@@ -15,15 +15,15 @@ parser.add_argument('-O', '--output-file',
                     required=False,
                     default=None,
                     dest='out_path',
-                    help='Provide output path',
+                    help='Provide output path and file name with .CSV extension',
                     type=str
                     )
 
-parser.add_argument('-B', '--brute-dictionary',
+parser.add_argument('-C', '--common-names',
                     required=False,
                     default=None,
                     dest='brute_dict',
-                    help='Provide output path',
+                    help='Provide a file with common names',
                     type=str
                     )
 
