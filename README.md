@@ -1,7 +1,5 @@
 # SecPol.inf file Auditing tool
 
-#
-
 #### This script performs auditing based on CIS Benchmark against Secpol.inf file configuration.
 
 #
