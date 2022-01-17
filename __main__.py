@@ -12,7 +12,6 @@ BOLD_TURQUOISE = colored.fg("dark_turquoise") + colored.attr("bold")
 BOLD_ORANGE = colored.fg("dark_orange_3a") + colored.attr("bold")
 BOLD_YELLOW = colored.fg("yellow_3b") + colored.attr("bold")
 
-
 one = checks.registry_values_check(
     sec_pol_object=checks.sec_pol_reader(
         sec_pol_file=args.input_path)
@@ -34,6 +33,7 @@ total = one + two + three
 if args.out_path:
     dataframe = pd.DataFrame(total)
     dataframe.columns = ["Status", "Name", "Configuration", "Comment"]
+    dataframe.sort_values(by="Status", inplace=True)
     dataframe.to_csv(args.out_path, index=False)
 
 for t in sorted(total):
@@ -55,5 +55,3 @@ for t in sorted(total):
             print(stylize(t[0], BOLD_BLUE), t[1], stylize(t[2], BOLD_TURQUOISE), stylize(t[3], BOLD_ORANGE))
         elif t[0] == checks.check_status[2]:
             print(stylize(t[0], BOLD_ORANGE), t[1], stylize(t[2], BOLD_TURQUOISE), stylize(t[3], BOLD_ORANGE))
-
-
