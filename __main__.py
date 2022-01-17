@@ -32,7 +32,7 @@ total = one + two + three
 
 if args.out_path:
     dataframe = pd.DataFrame(total)
-    dataframe.columns = ["Status", "Name", "Configuration", "Comment"]
+    dataframe.columns = ["Status", "Name", "Configuration"]
     dataframe.sort_values(by="Status", inplace=True)
     dataframe.to_csv(args.out_path, index=False)
 
