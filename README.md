@@ -43,7 +43,7 @@ Local Policies
 
 #### Usage:
 
-    python SecPol_Audit --input-path="tests/" --output-path="tests/" --common-names="engine/common_names.txt"
+    python SecPol_Audit --input-path="tests/" --output-path="tests/" --common-names="tests/common_names.txt"
 
 * For checking username against common name list, add names to
   [Common Names](https://github.com/akpysec/SecPol_Audit/blob/master/engine/common_names.txt) text file or specify your own file with similar format convention.
