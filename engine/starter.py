@@ -58,6 +58,7 @@ def start(output_filename: str):
                     else:
                         print("Column count miss match")
 
+                print()
                 print("-" * 150 + "\n")
                 print(f"Checking file: {path_to_files[0] + file}")
                 print("-" * 150 + "\n")
