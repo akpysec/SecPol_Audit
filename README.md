@@ -1,4 +1,4 @@
-SecPol.inf file Auditing tool
+# SecPol.inf file Auditing tool
 
 #
 
