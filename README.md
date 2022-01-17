@@ -25,9 +25,9 @@ Local Policies
 #### Prerequisites:
 
 - Download & Install [Python](https://www.python.org/downloads/) (tested with python ~> 3.8).
-- Use [Git](https://git-scm.com/downloads) or download this tool otherwise.
+- Use [Git](https://git-scm.com/downloads) or download this tool otherwise & update installation syntax to match your OS.
 - The required libraries can be found in the [requirements.txt](https://github.com/akpysec/SecPol_Audit/blob/master/requirements.txt) file.
-- Install [pip]("https://pip.pypa.io/en/stable/installation/").
+- Install [pip](https://pip.pypa.io/en/stable/installation/).
 
 #
 
