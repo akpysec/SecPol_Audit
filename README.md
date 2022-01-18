@@ -47,7 +47,7 @@ Local Policies
     python SecPol_Audit --input-path="tests/" --output-path="tests/" --file-name="Parsed_SecPol.xlsx" --common-names="tests/common_names.txt"
 
 * For checking username against common name list, add names to
-  [Common Names](https://github.com/akpysec/SecPol_Audit/blob/master/engine/common_names.txt) text file or specify your own file with similar format convention.
+  [Common Names](https://github.com/akpysec/SecPol_Audit/blob/master/tests/common_names.txt) text file or specify your own file with similar format convention.
 
 #
 
